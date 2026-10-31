@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Product — Pre-book | Pilates equipment</title>
+  <meta name="description" content="Pre-book Pilates equipment. Choose your setup and batch, pay 10% today and get it delivered in 3–4 weeks.">
+  <meta name="theme-color" content="#F7F5EE">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- SVG icon sprite -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.75"/><path d="M4.5 20c1.2-3.6 4-5.2 7.5-5.2s6.3 1.6 7.5 5.2"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8.5h14l-1 11.5H6L5 8.5Z"/><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15"/><path d="m13.5 6 6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M8.5 7H17v8.5"/></symbol>
+    <symbol id="i-top" viewBox="0 0 24 24"><path d="M12 20V5"/><path d="m6 11 6-6 6 6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.4-7.5-10A4.3 4.3 0 0 1 12 7.3 4.3 4.3 0 0 1 19.5 10c0 5.6-7.5 10-7.5 10Z"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M4.5 11 12 4.5 19.5 11v8.5h-5v-5h-5v5h-5V11Z"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4.5" y="4.5" width="6" height="6" rx="1.5"/><rect x="13.5" y="4.5" width="6" height="6" rx="1.5"/><rect x="4.5" y="13.5" width="6" height="6" rx="1.5"/><rect x="13.5" y="13.5" width="6" height="6" rx="1.5"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6.5h10.5v9.5H3z"/><path d="M13.5 10h4l3 3v3h-7"/><circle cx="7.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
+    <symbol id="i-return" viewBox="0 0 24 24"><path d="M4.5 9.5h10a5 5 0 0 1 0 10H9"/><path d="m8 6-3.5 3.5L8 13"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.5 5 6v5.5c0 4.3 2.9 7.4 7 9 4.1-1.6 7-4.7 7-9V6l-7-2.5Z"/><path d="m9 12 2.2 2.2L15 10.5"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="9.5" rx="2.5"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="6" width="17" height="12.5" rx="2.5"/><path d="m4.5 8 7.5 5.5L19.5 8"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="14.5" rx="2.5"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/><path d="m9.5 14.5 1.8 1.8 3.4-3.4"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9L6.7 20l1.1-6L3.4 9.8l6-.8L12 3.5Z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="11" rx="2"/><path d="M3.5 9h17v-1a1.5 1.5 0 0 0-1.5-1.5H5A1.5 1.5 0 0 0 3.5 8v1ZM12 6.5V20"/><path d="M12 6.5C10.5 3.5 7 3.8 7.4 5.6 7.8 7 12 6.5 12 6.5Zm0 0c1.5-3 5-2.7 4.6-.9C16.2 7 12 6.5 12 6.5Z"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="3.5" y="6" width="17" height="12.5" rx="2.5"/><path d="M3.5 10h17M7 15h4"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5M12 7.6v.4"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3.5h7l4 4V20a.5.5 0 0 1-.5.5h-10.5A.5.5 0 0 1 6.5 20V4a.5.5 0 0 1 .5-.5Z"/><path d="M14 3.5V8h4M9.5 12.5h5M9.5 16h5"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="m12 3.5 8 4v9l-8 4-8-4v-9l8-4Z"/><path d="m4 7.5 8 4 8-4M12 11.5v9"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Animated page background -->
+  <div class="bg" aria-hidden="true"><i></i><i></i><i></i><b></b><b></b></div>
+
+  <!-- Side rails (wide screens) -->
+  <aside class="rail rail--l" aria-hidden="true"><span>Est. 2026</span><i></i><span>Designed for better movement</span></aside>
+  <aside class="rail rail--r" aria-hidden="true"><span id="rail-pct">00</span><i><b id="rail-bar"></b></i><span>Scroll</span></aside>
+
+  <!-- ========== 1. Announcement bar ========== -->
+  <div class="announce" id="top">
+    <p class="announce__item">Pre-booking open · Delivered in 3–4 weeks</p>
+    <p class="announce__item" aria-hidden="true">Reserve with 10% · Free shipping over ₹999</p>
+  </div>
+
+  <!-- ========== 2. Navigation ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a class="logo" href="index.html" aria-label="Pilates equipment — home">Pilates <em>equipment</em></a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html#shop">Shop</a>
+        <a href="index.html#collections">Collections</a>
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#bundles">Bundles</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#help">Help</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn header__desk" type="button" data-open="search" aria-label="Search equipment"><svg><use href="#i-search"/></svg></button>
+        <button class="icon-btn header__desk" type="button" data-account aria-label="Account"><svg><use href="#i-user"/></svg><i class="acct-dot" hidden></i></button>
+        <button class="icon-btn" type="button" data-open="cart" aria-label="Open cart"><svg><use href="#i-bag"/></svg><span class="count" data-cart-count hidden>0</span></button>
+        <button class="burger" type="button" data-open="menu" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span aria-hidden="true">/</span>
+      <a href="index.html#shop">Products</a><span aria-hidden="true">/</span>
+      <span id="crumb-name" aria-current="page">Product</span>
+    </nav>
+
+    <!-- ========== Product detail (filled from js/script.js using ?id=) ========== -->
+    <section class="pdp" id="pdp" aria-labelledby="pdp-name">
+
+      <!-- Left: gallery -->
+      <div class="pdp__gallery">
+        <div class="gal" id="gal">
+          <div class="gal__stage" id="gal-stage" tabindex="0" role="group" aria-roledescription="carousel" aria-label="Product photos. Use the arrow keys to browse."></div>
+          <button class="round-btn gal__nav gal__nav--prev" type="button" id="gal-prev" aria-label="Previous photo"><svg style="transform:scaleX(-1)"><use href="#i-arrow"/></svg></button>
+          <button class="round-btn gal__nav gal__nav--next" type="button" id="gal-next" aria-label="Next photo"><svg><use href="#i-arrow"/></svg></button>
+          <span class="gal__count" id="gal-count" aria-hidden="true">1 / 1</span>
+          <button class="card__wish gal__wish" type="button" id="pdp-wish" data-wish="" aria-pressed="false" aria-label="Save to wishlist"><svg><use href="#i-heart"/></svg></button>
+        </div>
+        <div class="gal__thumbs" id="gal-thumbs" role="group" aria-label="Choose a photo"></div>
+        <ul class="pdp__stats" id="pdp-stats" aria-label="Highlights"></ul>
+      </div>
+
+      <!-- Right: buy box -->
+      <div class="pdp__buy">
+        <p class="pdp__tag" id="pdp-tag">Pre-booking open</p>
+        <h1 class="pdp__name" id="pdp-name">Loading…</h1>
+        <p class="pdp__sub" id="pdp-sub"></p>
+        <p class="pdp__rating" id="pdp-rating"></p>
+        <p class="pdp__desc" id="pdp-desc"></p>
+
+        <fieldset class="pdp__group">
+          <legend class="pdp__label">Choose your setup</legend>
+          <div class="picks" id="pdp-options"></div>
+        </fieldset>
+
+        <fieldset class="pdp__group">
+          <legend class="pdp__label">Choose your batch</legend>
+          <div class="batches" id="pdp-batches"></div>
+        </fieldset>
+
+        <div class="prebook-box">
+          <span class="prebook-box__icon" aria-hidden="true"><svg><use href="#i-gift"/></svg></span>
+          <p>
+            <strong>Pre-book for just <span id="pdp-deposit">—</span></strong>
+            <span>The pre-booking amount is adjusted against your purchase. Pay the balance of <b id="pdp-balance">—</b> before your order is dispatched.</span>
+          </p>
+        </div>
+
+        <p class="pdp__price" id="pdp-price-line" aria-live="polite"></p>
+
+        <div class="pdp__cta">
+          <div class="qty" role="group" aria-label="Quantity">
+            <button type="button" id="pdp-minus" aria-label="Decrease quantity"><svg><use href="#i-minus"/></svg></button>
+            <output id="pdp-qty" aria-live="polite">1</output>
+            <button type="button" id="pdp-plus" aria-label="Increase quantity"><svg><use href="#i-plus"/></svg></button>
+          </div>
+          <button class="btn btn--dark btn--shine pdp__prebook" type="button" id="pdp-prebook"><svg><use href="#i-bag"/></svg><span>Pre-book now — <b id="pdp-cta-amt">—</b></span></button>
+        </div>
+        <button class="btn btn--ghost btn--block pdp__add" type="button" id="pdp-add"><span>Add to cart</span><svg><use href="#i-plus"/></svg></button>
+        <p class="pdp__ship">Free delivery over ₹999 within India · <a href="terms.html">Read the pre-booking terms</a></p>
+
+        <ul class="pdp__perks">
+          <li><svg><use href="#i-truck"/></svg><span><strong>Free delivery</strong>Pan-India, over ₹999</span></li>
+          <li><svg><use href="#i-return"/></svg><span><strong>Cancel before dispatch</strong>Full refund</span></li>
+          <li><svg><use href="#i-lock"/></svg><span><strong>Price locked</strong>At the time you pre-book</span></li>
+          <li><svg><use href="#i-shield"/></svg><span><strong>5-year warranty</strong>On every frame we build</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Not found -->
+    <section class="section pdp-missing" id="pdp-missing" hidden>
+      <p class="eyebrow">Product not found</p>
+      <h1 class="h2">We couldn’t find <em>that piece</em></h1>
+      <p class="section__lead">The link may be out of date. Browse the full range instead.</p>
+      <a class="btn btn--dark" href="index.html#shop"><span>Explore equipment</span><svg><use href="#i-arrow"/></svg></a>
+    </section>
+
+    <!-- ========== Details + how pre-booking works ========== -->
+    <section class="section pdp-info" id="pdp-info" aria-label="Product details">
+      <div class="pdp-acc">
+        <details open>
+          <summary>What’s included<i aria-hidden="true"></i></summary>
+          <div><ul class="pdp-included" id="pdp-included"></ul></div>
+        </details>
+        <details>
+          <summary>Delivery &amp; pre-booking<i aria-hidden="true"></i></summary>
+          <div>
+            <p id="pdp-batch-copy">Estimated delivery in 3–4 weeks.</p>
+            <ul class="pdp-points">
+              <li>Pre-book today with 10% of the price. This amount is adjusted against your final bill — it is not an extra fee.</li>
+              <li>We build your order with its batch and message you when it is ready. The balance is due before dispatch.</li>
+              <li>Change your address or cancel any time before dispatch for a full refund of everything you have paid.</li>
+              <li>Your price is locked when you pre-book, even if our prices go up later.</li>
+            </ul>
+            <a class="link" href="terms.html">Read the full pre-booking terms</a>
+          </div>
+        </details>
+        <details>
+          <summary>Warranty &amp; care<i aria-hidden="true"></i></summary>
+          <div>
+            <ul class="pdp-points">
+              <li>Frames are covered for 5 years. Springs, ropes and upholstery are covered for 2 years against manufacturing defects.</li>
+              <li>Large equipment arrives 90% assembled with tools and a step-by-step guide.</li>
+              <li>Wipe down with a soft, damp cloth after use. Keep out of direct sunlight to protect finishes.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <aside class="pb-card" aria-labelledby="pb-title">
+        <p class="eyebrow">How pre-booking works</p>
+        <h2 class="pb-card__title" id="pb-title">Reserve now, <em>receive in weeks</em></h2>
+        <ol class="pb-steps">
+          <li><span>01</span><div><strong>Pre-book today</strong>Pay 10% to reserve your piece and lock the price.</div></li>
+          <li><span>02</span><div><strong>Made in your batch</strong>We build, finish and quality-check your order.</div></li>
+          <li><span>03</span><div><strong>Pay the balance</strong>We send a payment link before dispatch.</div></li>
+          <li><span>04</span><div><strong>Delivered</strong>To your address, est. <b data-delivery>3–4 weeks</b>.</div></li>
+        </ol>
+      </aside>
+    </section>
+
+    <!-- ========== Related ========== -->
+    <section class="section related" aria-labelledby="related-title">
+      <header class="section__head section__head--split">
+        <div>
+          <p class="eyebrow">Complete your studio</p>
+          <h2 class="h2" id="related-title">You may <em>also like</em></h2>
+        </div>
+        <a class="btn btn--ghost" href="index.html#shop"><span>View all</span><svg><use href="#i-arrow"/></svg></a>
+      </header>
+      <div class="grid" id="pdp-related"></div>
+    </section>
+  </main>
+
+  <!-- ========== 14. Footer ========== -->
+  <footer class="footer">
+    <div class="footer__cta" data-reveal="rotate">
+      <p class="footer__line">Stronger bodies. <em>Calmer minds.</em></p>
+      <a class="round-btn round-btn--lg" href="#top" aria-label="Back to top"><svg><use href="#i-top"/></svg></a>
+    </div>
+
+    <div class="footer__top">
+      <div class="footer__brand" data-reveal="up">
+        <a class="logo" href="index.html">Pilates <em>equipment</em></a>
+        <p>Thoughtfully designed equipment for stronger bodies and calmer minds.</p>
+        <p class="footer__care"><strong>Customer care</strong>Mon – Sat, 9 am – 6 pm</p>
+      </div>
+      <nav class="footer__col" aria-label="Shop" data-reveal="up" style="--d:.06s">
+        <h3>Shop</h3>
+        <a href="index.html#shop" data-filter-link="pilates">Pilates</a>
+        <a href="index.html#shop" data-filter-link="yoga">Yoga mats &amp; props</a>
+        <a href="index.html#shop" data-filter-link="strength">Dumbbells &amp; strength</a>
+        <a href="index.html#shop" data-filter-link="kits">Morning kits</a>
+      </nav>
+      <nav class="footer__col" aria-label="Company" data-reveal="up" style="--d:.12s">
+        <h3>Company</h3>
+        <a href="index.html#story">About</a>
+        <a href="index.html#movement">Journal</a>
+        <a href="index.html#newsletter">Contact</a>
+        <a href="index.html#help">Careers</a>
+      </nav>
+      <nav class="footer__col" aria-label="Help" data-reveal="up" style="--d:.18s">
+        <h3>Help</h3>
+        <a href="index.html#help">Shipping</a>
+        <a href="index.html#help">Returns</a>
+        <a href="index.html#help">FAQ</a>
+        <a href="index.html#help">Support</a>
+        <a href="terms.html">Pre-booking terms</a>
+      </nav>
+    </div>
+
+    <div class="footer__pay" data-reveal="up">
+      <span>We accept</span>
+      <ul><li>Visa</li><li>Mastercard</li><li>Amex</li><li>UPI</li><li>PayPal</li><li>Cash on delivery</li></ul>
+    </div>
+
+    <div class="footer__word" aria-hidden="true"><div class="footer__word-track"><span>Pilates <em>equipment</em></span><i></i><span>Pilates <em>equipment</em></span><i></i></div></div>
+
+    <div class="footer__bottom">
+      <p>© 2026 Pilates equipment</p>
+      <div class="footer__links">
+        <a href="index.html#help">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="#top">Instagram</a>
+        <a href="#top">Pinterest</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== Mobile tab bar ========== -->
+  <nav class="tabbar" aria-label="Quick actions">
+    <a href="#top"><svg><use href="#i-home"/></svg><span>Home</span></a>
+    <a href="index.html#shop"><svg><use href="#i-grid"/></svg><span>Shop</span></a>
+    <button type="button" data-open="search"><svg><use href="#i-search"/></svg><span>Search</span></button>
+    <button type="button" data-account><svg><use href="#i-user"/></svg><span>Account</span><i class="acct-dot" hidden></i></button>
+  </nav>
+
+  <!-- ========== Overlays ========== -->
+  <div class="backdrop" id="backdrop"></div>
+
+  <!-- Mobile menu (side drawer) -->
+  <div class="panel menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" tabindex="-1" inert>
+    <div class="panel__head">
+      <span class="logo">Pilates <em>equipment</em></span>
+      <button class="round-btn round-btn--sm" type="button" data-close aria-label="Close menu"><svg><use href="#i-close"/></svg></button>
+    </div>
+    <button class="menu__account" type="button" data-account>
+      <span class="avatar" id="menu-avatar"><svg><use href="#i-user"/></svg></span>
+      <span><strong id="menu-acct-title">Sign in</strong><small id="menu-acct-sub">or create an account</small></span>
+      <svg><use href="#i-chev"/></svg>
+    </button>
+    <nav class="menu__links" aria-label="Mobile">
+      <a href="index.html#shop">Shop<svg><use href="#i-chev"/></svg></a>
+      <a href="index.html#collections">Collections<svg><use href="#i-chev"/></svg></a>
+      <a href="index.html#how">How it works<svg><use href="#i-chev"/></svg></a>
+      <a href="index.html#bundles">Bundles<svg><use href="#i-chev"/></svg></a>
+      <a href="index.html#reviews">Reviews<svg><use href="#i-chev"/></svg></a>
+      <a href="index.html#help">Help<svg><use href="#i-chev"/></svg></a>
+    </nav>
+    <div class="menu__foot">
+      <button class="btn btn--ghost" type="button" data-open="search"><svg><use href="#i-search"/></svg><span>Search</span></button>
+      <button class="btn btn--dark" type="button" data-open="cart"><svg><use href="#i-bag"/></svg><span>Cart</span></button>
+      <p>Pre-booking open · Delivered in 3–4 weeks</p>
+    </div>
+  </div>
+
+  <!-- Search -->
+  <div class="panel search" id="search" role="dialog" aria-modal="true" aria-label="Search equipment" tabindex="-1" inert>
+    <div class="search__bar">
+      <svg><use href="#i-search"/></svg>
+      <label class="sr-only" for="search-input">Search equipment</label>
+      <input id="search-input" type="search" placeholder="Search equipment..." autocomplete="off" enterkeyhint="search" data-autofocus>
+      <button class="round-btn" type="button" data-close aria-label="Close search"><svg><use href="#i-close"/></svg></button>
+    </div>
+    <div class="search__body">
+      <div class="search__chips" id="search-chips" aria-label="Popular searches"></div>
+      <p class="search__label" id="search-label" aria-live="polite">Popular right now</p>
+      <ul class="search__results" id="search-results"></ul>
+    </div>
+  </div>
+
+  <!-- Quick view -->
+  <div class="panel quick" id="quick" role="dialog" aria-modal="true" aria-labelledby="quick-name" tabindex="-1" inert>
+    <button class="round-btn quick__close" type="button" data-close aria-label="Close quick view"><svg><use href="#i-close"/></svg></button>
+    <div class="quick__media" id="quick-media"></div>
+    <div class="quick__body">
+      <p class="eyebrow" id="quick-cat"></p>
+      <h2 class="quick__name" id="quick-name"></h2>
+      <p class="quick__rating" id="quick-rating"></p>
+      <p class="quick__price" id="quick-price"></p>
+      <p class="quick__desc" id="quick-desc"></p>
+      <ul class="quick__specs" id="quick-specs"></ul>
+      <p class="quick__stock"><i></i>Pre-order · delivered <strong data-delivery>in 3–4 weeks</strong></p>
+      <a class="quick__more" id="quick-more" href="product.html">View full details &amp; options<svg><use href="#i-arrow"/></svg></a>
+      <div class="quick__buy">
+        <div class="qty" role="group" aria-label="Quantity">
+          <button type="button" id="quick-minus" aria-label="Decrease quantity"><svg><use href="#i-minus"/></svg></button>
+          <output id="quick-qty" aria-live="polite">1</output>
+          <button type="button" id="quick-plus" aria-label="Increase quantity"><svg><use href="#i-plus"/></svg></button>
+        </div>
+        <button class="btn btn--dark quick__add" type="button" id="quick-add"><span>Pre-book</span><svg><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart drawer -->
+  <aside class="panel cart" id="cart" role="dialog" aria-modal="true" aria-label="Your pre-booking" tabindex="-1" inert>
+    <div class="panel__head">
+      <h2 class="cart__title">Your pre-booking <span id="cart-total-count">(0)</span></h2>
+      <button class="round-btn" type="button" data-close aria-label="Close cart"><svg><use href="#i-close"/></svg></button>
+    </div>
+    <div class="cart__ship">
+      <p id="ship-text"></p>
+      <div class="cart__bar"><i id="ship-bar"></i></div>
+    </div>
+    <ul class="cart__items" id="cart-items"></ul>
+    <div class="cart__empty" id="cart-empty">
+      <span class="cart__empty-icon" aria-hidden="true"><svg><use href="#i-bag"/></svg></span>
+      <p>Nothing pre-booked yet.</p>
+      <button class="btn btn--dark" type="button" data-close data-goto="#shop"><span>Explore equipment</span><svg><use href="#i-arrow"/></svg></button>
+    </div>
+    <div class="cart__foot" id="cart-foot">
+      <div class="cart__sum"><span>Subtotal</span><strong id="cart-subtotal">₹0</strong></div>
+      <p class="cart__note">Made to order · delivered <strong data-delivery>in 3–4 weeks</strong>. Pre-book with <strong id="cart-deposit">10%</strong> now, balance later.</p>
+      <div class="cart__actions">
+        <a class="btn btn--ghost" href="cart.html"><span>View cart</span></a>
+        <button class="btn btn--dark cart__checkout" type="button" id="checkout-btn" data-checkout><svg><use href="#i-calendar"/></svg><span>Checkout</span></button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Account: sign in / sign up -->
+  <div class="panel modal auth" id="auth" role="dialog" aria-modal="true" aria-labelledby="auth-title" tabindex="-1" inert>
+    <button class="round-btn round-btn--sm modal__close" type="button" data-close aria-label="Close"><svg><use href="#i-close"/></svg></button>
+
+    <div id="auth-guest">
+      <p class="eyebrow">Your account</p>
+      <h2 class="modal__title" id="auth-title">Welcome to <em>the studio</em></h2>
+
+      <div class="tabs" id="auth-tabs">
+        <div class="tabs__list" role="tablist" aria-label="Account" data-active="0">
+          <button type="button" role="tab" aria-selected="true" data-tab="signin">Sign in</button>
+          <button type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="signup">Sign up</button>
+          <i class="tabs__pill" aria-hidden="true"></i>
+        </div>
+        <div class="tabs__views">
+          <form class="tabs__view is-active" data-view="signin" id="form-signin" novalidate>
+            <label class="f"><span>Email <i>*</i></span><input type="email" name="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required><small class="f__err"></small></label>
+            <label class="f"><span>Password <i>*</i></span><input type="password" name="password" autocomplete="current-password" placeholder="Your password" minlength="6" required><small class="f__err"></small></label>
+            <div class="f-row f-row--between">
+              <label class="check"><input type="checkbox" name="remember" checked><span>Keep me signed in</span></label>
+              <button type="button" class="link" data-forgot>Forgot password?</button>
+            </div>
+            <button class="btn btn--dark btn--block" type="submit"><span>Sign in</span><svg><use href="#i-arrow"/></svg></button>
+          </form>
+
+          <form class="tabs__view" data-view="signup" id="form-signup" novalidate inert>
+            <label class="f"><span>Full name <i>*</i></span><input type="text" name="name" autocomplete="name" placeholder="Maya Rao" required><small class="f__err"></small></label>
+            <label class="f"><span>Email <i>*</i></span><input type="email" name="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required><small class="f__err"></small></label>
+            <label class="f"><span>Password <i>*</i></span><input type="password" name="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" required><small class="f__err"></small></label>
+            <label class="check"><input type="checkbox" name="terms" required><span>I agree to the Terms and Privacy Policy <i>*</i></span><small class="f__err"></small></label>
+            <button class="btn btn--dark btn--block" type="submit"><span>Create account</span><svg><use href="#i-arrow"/></svg></button>
+          </form>
+        </div>
+      </div>
+      <p class="modal__note">Your account is saved securely on our server. Passwords are stored only as an encrypted hash.</p>
+    </div>
+
+    <div class="auth__user" id="auth-user" hidden>
+      <span class="avatar avatar--lg" id="auth-avatar"></span>
+      <p class="eyebrow">Signed in</p>
+      <h2 class="modal__title" id="auth-name"></h2>
+      <p class="auth__email" id="auth-email"></p>
+      <div class="auth__orders" id="auth-orders" hidden>
+        <p class="eyebrow">Your pre-bookings</p>
+        <ul class="ord-list" id="auth-order-list" aria-live="polite"></ul>
+      </div>
+      <button class="btn btn--dark btn--block" type="button" data-close data-goto="#shop"><span>Continue shopping</span><svg><use href="#i-arrow"/></svg></button>
+      <button class="btn btn--ghost btn--block" type="button" id="signout"><span>Sign out</span></button>
+    </div>
+  </div>
+
+  <!-- Checkout -->
+  <div class="panel modal checkout" id="checkout" role="dialog" aria-modal="true" aria-labelledby="co-title" tabindex="-1" inert>
+    <button class="round-btn round-btn--sm modal__close" type="button" data-close aria-label="Close checkout"><svg><use href="#i-close"/></svg></button>
+
+    <div class="checkout__main" id="co-main">
+      <p class="eyebrow"><svg><use href="#i-lock"/></svg>Secure pre-booking</p>
+      <h2 class="modal__title" id="co-title">Pre-book your <em>order</em></h2>
+
+      <div class="tabs" id="co-tabs">
+        <div class="tabs__list" role="tablist" aria-label="Pre-book as" data-active="0">
+          <button type="button" role="tab" aria-selected="true" data-tab="new">New customer</button>
+          <button type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="login">I have an account</button>
+          <i class="tabs__pill" aria-hidden="true"></i>
+        </div>
+        <div class="tabs__views">
+          <form class="tabs__view is-active" data-view="new" id="form-order" novalidate>
+            <p class="co-note" id="co-note" hidden></p>
+
+            <fieldset>
+              <legend>Contact</legend>
+              <div class="f-row">
+                <label class="f"><span>Email <i>*</i></span><input type="email" name="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required><small class="f__err"></small></label>
+                <label class="f"><span>Phone <i>*</i></span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+91 98765 43210" data-rule="phone" required><small class="f__err"></small></label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Where should we deliver?</legend>
+              <label class="f"><span>Full name <i>*</i></span><input type="text" name="name" autocomplete="name" placeholder="Maya Rao" required><small class="f__err"></small></label>
+              <label class="f"><span>Address <i>*</i></span><input type="text" name="address" autocomplete="street-address" placeholder="House no., street, area" required><small class="f__err"></small></label>
+              <div class="f-row">
+                <label class="f"><span>City <i>*</i></span><input type="text" name="city" autocomplete="address-level2" required><small class="f__err"></small></label>
+                <label class="f"><span>State <i>*</i></span><input type="text" name="state" autocomplete="address-level1" required><small class="f__err"></small></label>
+              </div>
+              <div class="f-row">
+                <label class="f"><span>PIN / ZIP code <i>*</i></span><input type="text" name="zip" autocomplete="postal-code" data-rule="zip" required><small class="f__err"></small></label>
+                <label class="f"><span>Country <i>*</i></span>
+                  <select name="country" autocomplete="country-name" required>
+                    <option value="">Select country</option>
+                    <option>India</option><option>United States</option><option>United Kingdom</option><option>United Arab Emirates</option><option>Australia</option><option>Canada</option><option>Singapore</option>
+                  </select><small class="f__err"></small></label>
+              </div>
+            </fieldset>
+
+            <div class="eta-box">
+              <svg><use href="#i-truck"/></svg>
+              <p>Estimated delivery to <strong id="eta-place">your address</strong><b id="eta-range" data-delivery>in 3–4 weeks</b><small>Each piece is made to order. We’ll message you when it’s dispatched.</small></p>
+            </div>
+
+            <fieldset>
+              <legend>How would you like to pay?</legend>
+              <div class="plan">
+                <label><input type="radio" name="plan" value="deposit" checked><span><strong>Part payment · 10%</strong><small id="plan-deposit"></small></span></label>
+                <label><input type="radio" name="plan" value="full"><span><strong>Pay in full</strong><small id="plan-full"></small></span></label>
+              </div>
+              <div class="pay">
+                <label><input type="radio" name="pay" value="Card" checked><span>Card</span></label>
+                <label><input type="radio" name="pay" value="UPI"><span>UPI</span></label>
+                <label><input type="radio" name="pay" value="Net banking"><span>Net banking</span></label>
+              </div>
+              <p class="modal__note">Online payment is not connected yet: your pre-booking is saved and we will contact you to collect the amount.</p>
+            </fieldset>
+
+            <label class="check co-agree"><input type="checkbox" name="agree" required><span>I have read and agree to the <a href="terms.html" target="_blank" rel="noopener">Pre-booking Terms &amp; Conditions</a> <i>*</i></span><small class="f__err"></small></label>
+
+            <button class="btn btn--dark btn--block" type="submit"><svg><use href="#i-lock"/></svg><span id="co-submit">Confirm pre-booking</span></button>
+          </form>
+
+          <div class="tabs__view" data-view="login" inert>
+            <form id="form-co-login" novalidate>
+              <p class="co-lead">Sign in to pre-book faster with your saved details.</p>
+              <label class="f"><span>Email <i>*</i></span><input type="email" name="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required><small class="f__err"></small></label>
+              <label class="f"><span>Password <i>*</i></span><input type="password" name="password" autocomplete="current-password" placeholder="Your password" minlength="6" required><small class="f__err"></small></label>
+              <button class="btn btn--dark btn--block" type="submit"><span>Sign in &amp; continue</span><svg><use href="#i-arrow"/></svg></button>
+            </form>
+            <div class="co-signed" id="co-signed" hidden>
+              <span class="avatar avatar--lg" id="co-avatar"></span>
+              <p>You’re signed in as <strong id="co-user"></strong></p>
+              <button class="btn btn--dark btn--block" type="button" id="co-continue"><span>Continue to delivery</span><svg><use href="#i-arrow"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="checkout__summary" id="co-summary" aria-label="Price details">
+      <details class="co-sum" id="co-details">
+        <summary><span>Price details <small id="co-count"></small></span><strong id="co-total-top"></strong><svg><use href="#i-chev"/></svg></summary>
+        <ul class="co-items" id="co-items"></ul>
+      </details>
+      <dl class="co-totals">
+        <div><dt>Total MRP</dt><dd id="co-mrp"></dd></div>
+        <div class="co-totals__save"><dt>Pre-order discount</dt><dd id="co-discount"></dd></div>
+        <div><dt>Subtotal <small>incl. taxes</small></dt><dd id="co-subtotal"></dd></div>
+        <div><dt>Shipping</dt><dd id="co-shipping"></dd></div>
+        <div class="co-totals__grand"><dt>Order total</dt><dd id="co-total"></dd></div>
+      </dl>
+      <div class="co-pay" aria-live="polite">
+        <p class="co-pay__label">Payment option</p>
+        <p class="co-pay__plan"><i aria-hidden="true"></i><span id="co-plan-name">Part payment</span></p>
+        <p class="co-pay__text" id="co-plan-text"></p>
+        <div class="co-pay__row co-pay__row--now"><span>To be paid now</span><strong id="co-due"></strong></div>
+        <div class="co-pay__row"><span>Balance later <small>before dispatch</small></span><strong id="co-balance"></strong></div>
+      </div>
+      <p class="co-batch"><svg><use href="#i-calendar"/></svg><span><strong data-batch-name>Next batch</strong> · est. delivery <span data-delivery>in 3–4 weeks</span></span></p>
+      <ul class="co-trust">
+        <li><svg><use href="#i-truck"/></svg>Delivered <span data-delivery>in 3–4 weeks</span></li>
+        <li><svg><use href="#i-return"/></svg>Cancel any time before dispatch</li>
+        <li><svg><use href="#i-shield"/></svg>5-year frame warranty</li>
+        <li><svg><use href="#i-doc"/></svg><a href="terms.html" target="_blank" rel="noopener">Pre-booking terms</a></li>
+      </ul>
+    </aside>
+
+    <div class="checkout__done" id="co-done" hidden>
+      <span class="done__tick" aria-hidden="true"><svg><use href="#i-check"/></svg></span>
+      <p class="eyebrow">Pre-booking confirmed</p>
+      <h2 class="modal__title">Thank you, <em id="done-name"></em></h2>
+      <p class="done__text">Booking <strong id="done-no"></strong> is confirmed. We’ll deliver to <strong id="done-place"></strong> between <strong id="done-eta"></strong>. Updates go to <strong id="done-email"></strong>.</p>
+      <dl class="co-totals" id="done-totals"></dl>
+      <p class="modal__note">Your pre-booking is saved. Signed-in customers can track or cancel it any time under Account.</p>
+      <button class="btn btn--dark btn--block" type="button" data-close data-goto="#shop"><span>Continue browsing</span><svg><use href="#i-arrow"/></svg></button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

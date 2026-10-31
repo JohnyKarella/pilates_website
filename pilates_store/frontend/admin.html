@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Store Admin — Pilates equipment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+  <script src="js/admin.js" defer></script>
+</head>
+<body>
+  <!-- Sign in -->
+  <main class="login" id="login" hidden>
+    <form class="login__card" id="login-form" novalidate>
+      <p class="eyebrow">Pilates equipment</p>
+      <h1>Store <em>admin</em></h1>
+      <label class="field"><span>Email</span><input type="email" name="email" autocomplete="username" required></label>
+      <label class="field"><span>Password</span><input type="password" name="password" autocomplete="current-password" required></label>
+      <p class="login__err" id="login-err" role="alert"></p>
+      <button class="btn" type="submit">Sign in</button>
+      <a class="login__back" href="index.html">← Back to the shop</a>
+    </form>
+  </main>
+
+  <!-- Dashboard -->
+  <div class="app" id="app" hidden>
+    <header class="top">
+      <a class="brand" href="index.html" title="Open the shop">Pilates <em>equipment</em> <small>Admin</small></a>
+      <nav class="tabs" aria-label="Sections">
+        <button type="button" data-tab="overview" aria-current="page">Overview</button>
+        <button type="button" data-tab="orders">Orders</button>
+        <button type="button" data-tab="products">Products</button>
+        <button type="button" data-tab="customers">Customers</button>
+        <button type="button" data-tab="subscribers">Newsletter</button>
+      </nav>
+      <div class="top__user"><span id="admin-name"></span><button type="button" class="link" id="logout">Sign out</button></div>
+    </header>
+
+    <section class="view" data-view="overview">
+      <h2>Overview</h2>
+      <div class="stats" id="stats"></div>
+      <h3>Orders by status</h3>
+      <div class="status-row" id="status-row"></div>
+      <h3>Latest orders</h3>
+      <div class="table-wrap"><table id="latest"></table></div>
+    </section>
+
+    <section class="view" data-view="orders" hidden>
+      <div class="view__head">
+        <h2>Orders</h2>
+        <div class="filters">
+          <input type="search" id="order-q" placeholder="Search booking no., name, email, phone, city">
+          <select id="order-status"><option value="">All statuses</option></select>
+          <a class="btn btn--ghost" id="csv" href="/api/admin/orders.csv">Download CSV</a>
+        </div>
+      </div>
+      <div class="table-wrap"><table id="orders"></table></div>
+    </section>
+
+    <section class="view" data-view="products" hidden>
+      <div class="view__head">
+        <h2>Products</h2>
+        <p class="hint">Change prices (₹) and labels, then press Save on that row. Hidden products disappear from the shop.</p>
+      </div>
+      <div class="table-wrap"><table id="products"></table></div>
+    </section>
+
+    <section class="view" data-view="customers" hidden>
+      <h2>Customers</h2>
+      <div class="table-wrap"><table id="customers"></table></div>
+    </section>
+
+    <section class="view" data-view="subscribers" hidden>
+      <h2>Newsletter subscribers</h2>
+      <div class="table-wrap"><table id="subscribers"></table></div>
+    </section>
+  </div>
+
+  <!-- Order details -->
+  <aside class="drawer" id="drawer" aria-hidden="true" inert>
+    <button type="button" class="drawer__close" id="drawer-close" aria-label="Close">×</button>
+    <div id="drawer-body"></div>
+  </aside>
+  <div class="shade" id="shade" hidden></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Flask>=3.0
+pymongo>=4.6,<5      # MongoDB Atlas driver
+dnspython>=2.4       # needed for mongodb+srv:// Atlas addresses
+python-dotenv>=1.0

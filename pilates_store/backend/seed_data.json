@@ -1,0 +1,529 @@
+{
+  "products": [
+    {
+      "id": "stability-ball",
+      "photo": "images/products/stability-ball.jpg",
+      "cut": true,
+      "hover": "images/products/stability-ball-stone.jpg",
+      "name": "Stability Ball 65 cm",
+      "category": "Pilates & Core",
+      "filter": "pilates",
+      "price": 1499,
+      "stock": 50,
+      "was": 1899,
+      "rating": 4.8,
+      "reviews": 312,
+      "badge": "Best seller",
+      "art": "ring",
+      "tone": "#E6ECF6",
+      "description": "A burst-resistant ball for core work, balance training, Pilates and posture. Hand pump included.",
+      "specs": [
+        "65 cm, for 168–185 cm height",
+        "Burst-resistant",
+        "Hand pump included"
+      ],
+      "more": [
+        {
+          "src": "images/products/stability-ball-blush.jpg",
+          "cut": true
+        },
+        {
+          "src": "images/lifestyle/movement-balance.jpg"
+        }
+      ]
+    },
+    {
+      "id": "stability-ball-blush",
+      "photo": "images/products/stability-ball-blush.jpg",
+      "cut": true,
+      "name": "Stability Ball 55 cm",
+      "category": "Pilates & Core",
+      "filter": "pilates",
+      "price": 1299,
+      "stock": 50,
+      "rating": 4.8,
+      "reviews": 204,
+      "badge": "New colour",
+      "art": "ring",
+      "tone": "#F6E4EC",
+      "description": "The same studio-grade ball in a smaller size and a soft blush colour, sized for heights up to 168 cm.",
+      "specs": [
+        "55 cm, up to 168 cm height",
+        "Burst-resistant",
+        "Hand pump included"
+      ],
+      "more": [
+        {
+          "src": "images/products/stability-ball-stone.jpg",
+          "cut": true
+        },
+        {
+          "src": "images/products/stability-ball.jpg",
+          "cut": true
+        }
+      ]
+    },
+    {
+      "id": "aero-reformer",
+      "photo": "https://images.pexels.com/photos/25596894/pexels-photo-25596894.jpeg?auto=compress&cs=tinysrgb&w=900&h=1125&fit=crop",
+      "fallback": "images/renders/aero-reformer.jpg",
+      "name": "Aero Reformer",
+      "category": "Pilates Reformer",
+      "filter": "pilates",
+      "price": 149999,
+      "stock": 15,
+      "was": 169999,
+      "rating": 4.9,
+      "reviews": 214,
+      "badge": "Pre-sale",
+      "art": "reformer",
+      "tone": "#E8EDDF",
+      "description": "A studio-grade reformer with whisper-quiet rails, five-spring resistance and an oak frame made to live in your home.",
+      "specs": [
+        "5-spring resistance",
+        "Solid oak frame",
+        "Silent glide rails"
+      ],
+      "more": [
+        {
+          "src": "images/renders/aero-reformer.jpg"
+        },
+        {
+          "src": "images/lifestyle/featured-reformer.jpg"
+        },
+        {
+          "src": "images/hero/hero-reformer.jpg"
+        },
+        {
+          "src": "images/lifestyle/movement-strength.jpg"
+        },
+        {
+          "src": "images/categories/reformers.jpg"
+        }
+      ],
+      "options": [
+        {
+          "key": "starter",
+          "name": "Reformer Starter",
+          "note": "Aero Reformer with 5 springs, foot bar and straps",
+          "price": 149999,
+          "was": 169999
+        },
+        {
+          "key": "combo",
+          "name": "Studio Combo",
+          "note": "Reformer + sitting box, jump board and Flow Yoga Mat",
+          "price": 164999,
+          "was": 194999,
+          "best": true
+        }
+      ]
+    },
+    {
+      "id": "foam-roller",
+      "photo": "images/products/foam-roller.jpg",
+      "cut": true,
+      "name": "Pilates Foam Roller",
+      "category": "Pilates & Recovery",
+      "filter": "pilates",
+      "price": 999,
+      "stock": 50,
+      "rating": 4.7,
+      "reviews": 158,
+      "badge": "",
+      "art": "mat",
+      "tone": "#E3EEF7",
+      "description": "A firm, lightweight roller for spinal alignment, balance work and post-workout muscle release.",
+      "specs": [
+        "90 cm × 15 cm",
+        "High-density foam",
+        "Holds its shape"
+      ],
+      "more": [
+        {
+          "src": "images/categories/everyday-pilates.jpg"
+        }
+      ]
+    },
+    {
+      "id": "flow-yoga-mat",
+      "photo": "https://images.unsplash.com/photo-1646239646963-b0b9be56d6b5?auto=format&fit=crop&w=900&h=1125&q=72",
+      "fallback": "images/renders/flow-mat-pro.jpg",
+      "name": "Flow Yoga Mat",
+      "category": "Yoga Mat",
+      "filter": "yoga",
+      "price": 1799,
+      "stock": 50,
+      "was": 2199,
+      "rating": 4.9,
+      "reviews": 528,
+      "badge": "Best seller",
+      "art": "mat",
+      "tone": "#F4E6D9",
+      "description": "Extra-thick, grippy and kind to joints. A natural rubber base keeps the mat grounded through every pose.",
+      "specs": [
+        "6 mm cushioning",
+        "Natural rubber base",
+        "Carry strap included"
+      ],
+      "more": [
+        {
+          "src": "images/renders/flow-mat-pro.jpg"
+        },
+        {
+          "src": "images/lifestyle/movement-recovery.jpg"
+        },
+        {
+          "src": "images/categories/everyday-pilates.jpg"
+        }
+      ]
+    },
+    {
+      "id": "yoga-brick",
+      "photo": "images/products/yoga-brick.jpg",
+      "cut": true,
+      "name": "Foam Yoga Brick",
+      "category": "Yoga Props",
+      "filter": "yoga",
+      "price": 499,
+      "stock": 50,
+      "rating": 4.8,
+      "reviews": 267,
+      "badge": "",
+      "art": "barrel",
+      "tone": "#E3EEF7",
+      "description": "A light, firm brick that brings the floor closer, supports alignment and deepens stretches safely.",
+      "specs": [
+        "23 × 15 × 7.5 cm",
+        "Bevelled edges",
+        "Non-slip surface"
+      ],
+      "more": [
+        {
+          "src": "images/lifestyle/movement-recovery.jpg"
+        }
+      ]
+    },
+    {
+      "id": "yoga-strap",
+      "photo": "images/products/yoga-strap.jpg",
+      "cut": true,
+      "name": "Cotton Yoga Strap",
+      "category": "Yoga Props",
+      "filter": "yoga",
+      "price": 449,
+      "stock": 50,
+      "rating": 4.7,
+      "reviews": 143,
+      "badge": "",
+      "art": "bands",
+      "tone": "#E6EAF6",
+      "description": "A soft, tightly woven cotton strap for deeper stretches, holds and alignment, with an easy-adjust buckle.",
+      "specs": [
+        "100% organic cotton",
+        "2.4 m long",
+        "Metal D-ring buckle"
+      ]
+    },
+    {
+      "id": "sculpt-dumbbells",
+      "photo": "https://images.unsplash.com/photo-1591291621164-2c6367723315?auto=format&fit=crop&w=900&h=1125&q=72",
+      "fallback": "images/renders/sculpt-dumbbells.jpg",
+      "name": "Sculpt Dumbbell Pair",
+      "category": "Dumbbells",
+      "filter": "strength",
+      "price": 1299,
+      "stock": 50,
+      "rating": 4.7,
+      "reviews": 133,
+      "badge": "",
+      "art": "dumbbells",
+      "tone": "#F6E4EC",
+      "description": "Soft-touch 2 kg weights that add focus to arm series and standing work without breaking your flow.",
+      "specs": [
+        "2 × 2 kg",
+        "Soft-touch coating",
+        "Anti-roll shape"
+      ],
+      "more": [
+        {
+          "src": "images/renders/sculpt-dumbbells.jpg"
+        }
+      ]
+    },
+    {
+      "id": "weighted-core-ball",
+      "photo": "images/products/weighted-core-ball.jpg",
+      "cut": true,
+      "hover": "images/products/weighted-core-ball-side.jpg",
+      "name": "Dual-Grip Weighted Ball",
+      "category": "Strength",
+      "filter": "strength",
+      "price": 2499,
+      "stock": 50,
+      "rating": 4.8,
+      "reviews": 96,
+      "badge": "Studio pick",
+      "art": "dumbbells",
+      "tone": "#ECEDEA",
+      "description": "A 7 kg sand-filled ball with two handles for squats, twists, presses and full-body conditioning.",
+      "specs": [
+        "7 kg sand fill",
+        "Two moulded handles",
+        "Durable shell"
+      ],
+      "more": [
+        {
+          "src": "images/categories/strength.jpg",
+          "cut": true
+        }
+      ]
+    },
+    {
+      "id": "resistance-tube",
+      "photo": "images/products/resistance-tube.jpg",
+      "cut": true,
+      "name": "Resistance Tube",
+      "category": "Strength",
+      "filter": "strength",
+      "price": 699,
+      "stock": 50,
+      "rating": 4.6,
+      "reviews": 187,
+      "badge": "",
+      "art": "bands",
+      "tone": "#F1ECE4",
+      "description": "A latex tube with foam handles for rows, presses and curls. Light enough to pack, strong enough to work.",
+      "specs": [
+        "Medium resistance",
+        "Foam grip handles",
+        "Latex tube"
+      ]
+    },
+    {
+      "id": "toning-band",
+      "photo": "images/products/toning-band.jpg",
+      "cut": true,
+      "name": "Toning Band",
+      "category": "Strength",
+      "filter": "strength",
+      "price": 599,
+      "stock": 50,
+      "rating": 4.6,
+      "reviews": 121,
+      "badge": "",
+      "art": "bands",
+      "tone": "#ECEDEA",
+      "description": "A lighter tube band for arm toning, warm-ups and rehab-friendly strength work.",
+      "specs": [
+        "Light resistance",
+        "Cushioned handles",
+        "Travel friendly"
+      ]
+    },
+    {
+      "id": "push-up-grips",
+      "photo": "images/products/push-up-grips.jpg",
+      "cut": true,
+      "name": "Push-up Grips",
+      "category": "Strength",
+      "filter": "strength",
+      "price": 799,
+      "stock": 50,
+      "rating": 4.7,
+      "reviews": 89,
+      "badge": "",
+      "art": "dumbbells",
+      "tone": "#EEF1E8",
+      "description": "Angled grips that ease pressure on your wrists and let you go deeper in every push-up.",
+      "specs": [
+        "Non-slip feet",
+        "Foam handles",
+        "Pair"
+      ]
+    },
+    {
+      "id": "morning-strength-kit",
+      "photo": "images/products/morning-strength-kit.jpg",
+      "cut": true,
+      "name": "Morning Strength Kit",
+      "category": "Morning Kit",
+      "filter": "kits",
+      "price": 1899,
+      "stock": 50,
+      "was": 2299,
+      "rating": 4.8,
+      "reviews": 176,
+      "badge": "Kit",
+      "art": "bands",
+      "tone": "#EDF2D6",
+      "description": "Three resistance tubes, a door anchor and ankle straps in a mesh pouch. A full morning workout anywhere.",
+      "specs": [
+        "3 resistance levels",
+        "Door anchor & straps",
+        "Mesh carry pouch"
+      ]
+    },
+    {
+      "id": "speed-jump-rope",
+      "photo": "images/products/speed-jump-rope.jpg",
+      "cut": true,
+      "name": "Speed Jump Rope",
+      "category": "Morning Kit",
+      "filter": "kits",
+      "price": 549,
+      "stock": 50,
+      "rating": 4.7,
+      "reviews": 233,
+      "badge": "",
+      "art": "bands",
+      "tone": "#ECEDEA",
+      "description": "A steel-cable speed rope with cushioned handles for quick, energising morning cardio.",
+      "specs": [
+        "Adjustable length",
+        "Steel cable",
+        "Foam handles"
+      ]
+    },
+    {
+      "id": "classic-skipping-rope",
+      "photo": "images/products/classic-skipping-rope.jpg",
+      "name": "Classic Skipping Rope",
+      "category": "Morning Kit",
+      "filter": "kits",
+      "price": 349,
+      "stock": 50,
+      "rating": 4.6,
+      "reviews": 98,
+      "badge": "",
+      "art": "bands",
+      "tone": "#F3E3D3",
+      "description": "A light, colourful rope with wooden-feel handles for warm-ups, kids and casual cardio.",
+      "specs": [
+        "2.7 m rope",
+        "Lightweight handles",
+        "Tangle-free"
+      ],
+      "more": [
+        {
+          "src": "images/categories/morning-kits.jpg"
+        }
+      ]
+    },
+    {
+      "id": "hydration-bottle",
+      "photo": "images/products/hydration-bottle.jpg",
+      "cut": true,
+      "name": "Hydration Bottle 1 L",
+      "category": "Morning Kit",
+      "filter": "kits",
+      "price": 449,
+      "stock": 50,
+      "rating": 4.7,
+      "reviews": 142,
+      "badge": "",
+      "art": "ring",
+      "tone": "#E3EEF7",
+      "description": "A shatter-resistant bottle with volume markings and a carabiner clip, so your water goes where you train.",
+      "specs": [
+        "1 litre",
+        "BPA-free",
+        "Carabiner clip"
+      ]
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-morning",
+      "name": "Morning Starter Kit",
+      "category": "Bundle",
+      "price": 1299,
+      "stock": 25,
+      "items": [
+        "speed-jump-rope",
+        "toning-band",
+        "hydration-bottle"
+      ],
+      "tone": "#EDF2D6",
+      "rating": 4.9,
+      "reviews": 88,
+      "description": "Ten minutes of cardio and toning before breakfast: a speed rope, a toning band and a bottle to keep you going."
+    },
+    {
+      "id": "bundle-yoga",
+      "name": "Yoga Essentials Set",
+      "category": "Bundle",
+      "price": 2299,
+      "stock": 25,
+      "items": [
+        "flow-yoga-mat",
+        "yoga-brick",
+        "yoga-strap"
+      ],
+      "tone": "#F4E6D9",
+      "rating": 4.9,
+      "reviews": 61,
+      "description": "Everything for a steady home practice: a grippy mat, a supportive brick and a cotton strap for deeper stretches."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Everything feels intentional — from the equipment to the smallest detail.",
+      "name": "Maya R.",
+      "role": "Pilates Instructor",
+      "product": "Aero Reformer"
+    },
+    {
+      "quote": "The reformer is so quiet I train before the house wakes up. It changed my mornings.",
+      "name": "Jonas L.",
+      "role": "Home studio owner",
+      "product": "Aero Reformer"
+    },
+    {
+      "quote": "I recommend the stability ball to every client now. Solid, grippy and it holds its shape.",
+      "name": "Anika P.",
+      "role": "Physiotherapist",
+      "product": "Stability Ball 65 cm"
+    },
+    {
+      "quote": "The mat grips beautifully and my knees finally stopped complaining during roll-ups.",
+      "name": "Sara K.",
+      "role": "Verified buyer",
+      "product": "Flow Yoga Mat"
+    },
+    {
+      "quote": "Pre-booked on a Monday, delivered in just over three weeks, exactly as promised. Packed beautifully.",
+      "name": "Daniel V.",
+      "role": "Verified buyer",
+      "product": "Morning Strength Kit"
+    },
+    {
+      "quote": "The yoga brick and strap made my morning practice so much easier. They go everywhere with me.",
+      "name": "Priya S.",
+      "role": "Yoga & Pilates teacher",
+      "product": "Yoga Essentials Set"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "When will my pre-booked order arrive?",
+      "a": "Every piece is made to order and delivered within 3–4 weeks of booking, to the address you choose at checkout. We message you when it is built, dispatched and out for delivery."
+    },
+    {
+      "q": "How does reserving with 10% work?",
+      "a": "Pay 10% today to lock in your order and price. The balance is due before dispatch. You can also pay the full amount when you pre-book."
+    },
+    {
+      "q": "Can I cancel or change a pre-booking?",
+      "a": "Yes. Change the delivery address or cancel any time before dispatch for a full refund of everything you have paid."
+    },
+    {
+      "q": "Is assembly included?",
+      "a": "Large equipment arrives 90% assembled with tools and a step-by-step guide. Most customers finish setup in under 30 minutes."
+    },
+    {
+      "q": "What does the warranty cover?",
+      "a": "Frames are covered for 5 years. Springs, ropes and upholstery are covered for 2 years against manufacturing defects."
+    }
+  ]
+}
